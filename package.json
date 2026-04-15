@@ -1,0 +1,16 @@
+{
+  "name": "pakistan-railway-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "deploy": "vercel --prod"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "firebase-admin": "^13.8.0",
+    "node-fetch": "^2.7.0"
+  }
+}

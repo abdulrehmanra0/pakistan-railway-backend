@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment variables (SECRET KEYS - NEVER PUSH)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel local settings
+.vercel
+
+# OS files
+.DS_Store
+Thumbs.db
