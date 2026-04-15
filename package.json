@@ -1,6 +1,7 @@
 {
   "name": "pakistan-railway-backend",
   "version": "1.0.0",
+  "last_update": "2026-04-15",
   "main": "index.js",
  "scripts": {
   "deploy": "vercel --prod"
