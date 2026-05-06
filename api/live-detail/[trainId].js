@@ -13,24 +13,30 @@ module.exports = async (req, res) => {
   }
 
   try {
-    // Construct the URL for the specific train detail
     const url = `${SOURCES.LIVE_TELEMETRY.base_url}?action=train-detail&trainId=${trainId}`;
     
+    // We add a User-Agent to prevent the external API from blocking us
     const response = await fetch(url, {
-      headers: { 'Accept': 'application/json' }
+      headers: { 
+        'Accept': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+      }
     });
 
     if (!response.ok) {
-      throw new Error(`Telemetry API returned ${response.status}`);
+      // This will tell us exactly if it's a 403 Forbidden or 404 Not Found
+      return res.status(response.status).json({ 
+        success: false, 
+        error: `Telemetry API responded with status ${response.status}` 
+      });
     }
 
     const rawData = await response.json();
 
-    if (!rawData.success) {
+    if (!rawData || !rawData.success) {
       return res.status(404).json({ success: false, error: 'Train data not found' });
     }
 
-    // We return the data exactly as it is because it is already very clean
     return res.status(200).json({
       success: true,
       timestamp: rawData.timestamp,
@@ -38,10 +44,10 @@ module.exports = async (req, res) => {
     });
 
   } catch (error) {
-    console.error('Live Detail Error:', error);
+    console.error('CRITICAL ERROR:', error);
     return res.status(500).json({
       success: false,
-      error: 'Failed to fetch live telemetry data',
+      error: 'Internal Server Error',
       message: error.message
     });
   }
