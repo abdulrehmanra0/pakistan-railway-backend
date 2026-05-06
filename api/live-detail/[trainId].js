@@ -1,3 +1,4 @@
+const fetch = require('node-fetch'); 
 const { fetchWithFallback } = require('../lib/fetcher');
 const SOURCES = require('../lib/sources');
 
