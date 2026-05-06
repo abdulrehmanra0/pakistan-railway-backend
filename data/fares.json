@@ -1,0 +1,31 @@
+{
+  "routes": [
+    { "route": "Karachi → Lahore", "economy": "3,750", "acStandard": "7,600", "acBusiness": "10,950", "acSleeper": "14,050", "duration": "18-22h" },
+    { "route": "Karachi → Rawalpindi", "economy": "4,200", "acStandard": "10,450", "acBusiness": "11,450", "acSleeper": "16,550", "duration": "22-26h" },
+    { "route": "Karachi → Peshawar", "economy": "4,900", "acStandard": "11,550", "acBusiness": "13,300", "acSleeper": "--", "duration": "24-28h" },
+    { "route": "Karachi → Multan", "economy": "2,750", "acStandard": "5,900", "acBusiness": "8,400", "acSleeper": "11,200", "duration": "14-17h" },
+    { "route": "Karachi → Hyderabad", "economy": "750", "acStandard": "1,500", "acBusiness": "--", "acSleeper": "--", "duration": "2-3h" },
+    { "route": "Rawalpindi → Lahore", "economy": "1,100", "acStandard": "1,950", "acBusiness": "2,150", "acSleeper": "2,400", "duration": "4-5h" },
+    { "route": "Rawalpindi → Peshawar", "economy": "750", "acStandard": "1,500", "acBusiness": "2,000", "acSleeper": "--", "duration": "3-4h" },
+    { "route": "Rawalpindi → Multan", "economy": "2,200", "acStandard": "3,900", "acBusiness": "5,400", "acSleeper": "8,150", "duration": "8-10h" },
+    { "route": "Karachi → Faisalabad", "economy": "3,400", "acStandard": "7,350", "acBusiness": "10,050", "acSleeper": "10,780", "duration": "16-20h" },
+    { "route": "Karachi → Quetta", "economy": "2,050", "acStandard": "4,200", "acBusiness": "--", "acSleeper": "--", "duration": "12-14h" },
+    { "route": "Lahore → Peshawar", "economy": "1,950", "acStandard": "3,500", "acBusiness": "4,800", "acSleeper": "--", "duration": "7-9h" },
+    { "route": "Lahore → Multan", "economy": "1,100", "acStandard": "2,100", "acBusiness": "3,300", "acSleeper": "5,800", "duration": "5-6h" }
+  ],
+  "classes": [
+    { "name": "Economy Seat", "features": ["Basic cushioned seats", "Fan cooling", "Available on all trains"], "description": "Standard seating in fan-cooled coaches. The most affordable way to travel.", "fareRange": "Rs. 370 – 6,350" },
+    { "name": "Economy Berth", "features": ["Sleeping berth option", "Fan cooling", "Overnight comfort"], "description": "Economy berth provides a sleeping berth in fan-cooled coaches.", "fareRange": "Rs. 420 – 6,450" },
+    { "name": "AC Standard", "features": ["Full air conditioning", "Reclining seats", "Comfortable travel"], "description": "Air-conditioned coaches with comfortable reclining seats.", "fareRange": "Rs. 1,350 – 12,250" },
+    { "name": "AC Business", "features": ["Premium AC coaches", "Wide seats", "Better amenities"], "description": "Premium air-conditioned class with wider seats and better legroom.", "fareRange": "Rs. 2,000 – 15,350" },
+    { "name": "AC Sleeper", "features": ["Sleeping berths with AC", "Bedding provided", "Long-distance comfort"], "description": "Air-conditioned sleeping berths ideal for overnight journeys.", "fareRange": "Rs. 8,150 – 17,500" },
+    { "name": "Parlor Car", "features": ["Luxury individual pods", "Premium service", "Best available class"], "description": "The highest class on select trains. Luxury seating pods.", "fareRange": "Rs. 2,400 – 13,800" }
+  ],
+  "faqs": [
+    { "q": "How can I book Pakistan Railway tickets online?", "a": "You can book tickets through the official Pakistan Railways website or mobile app using cards or mobile wallets." },
+    { "q": "What is the cheapest train class?", "a": "Economy Class (Seat) is the most affordable option." },
+    { "q": "What is the cancellation policy?", "a": "Cancellations 24+ hours before departure get a full refund minus a small fee." },
+    { "q": "Are there any discounts?", "a": "Yes: Students (25-50%), Seniors (25%), and Disabled persons (50%)." },
+    { "q": "Difference between AC Standard and Business?", "a": "AC Business offers wider seats, complimentary meals, and priority boarding." }
+  ]
+}
